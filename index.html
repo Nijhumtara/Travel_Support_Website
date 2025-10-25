@@ -18,6 +18,9 @@
     />
   </head>
   <body>
+
+    <!-- Navigation_Bar For Travel Support -->
+
     <header>
       <nav id="nav_bar">
         <img src="logo.png" alt="logo" id="logo" />
@@ -32,40 +35,73 @@
         </div>
       </nav>
     </header>
+
+    <!-- Home Section -->
+
     <section id="hero_section">
       <p>BREAKING THE LIMITS OF TRADITIONAL TRAVEL INSURANCE</p>
       <h2>Find the Right Plan for You</h2>
-      <div id="form_option">
-        <p id="option1">Single Trip</p>
-        <p id="option2">Multi Trip</p>
-      </div>
-      <form action="/submit">
-        <div id="drop_down">
-          <div id="dropDownSelect">
-            <div id="input_container">
-              <input
-                type="text"
-                id="searchInput"
-                placeholder="Type or choose your destiantion"
-              />
-              <i class="fa-solid fa-chevron-down"></i>
-            </div>
-            <div id="selectedItems"></div>
-          </div>
-          <div id="dropdown_menu">
-            <h4>Popular Destinations</h4>
-            <ul id="destinationList">
-              <li>Bali [Indonesia]</li>
-              <li>New Zealand</li>
-              <li>USA [United States]</li>
-              <li>United Kingdom</li>
-              <li>World Wide</li>
-              <li>All of Europe</li>
-              <li>All of Asia</li>
-            </ul>
-          </div>
+
+      <!-- Form for Travellers Information -->
+       
+      <div id="travel_form">
+        <div id="form_option">
+          <p id="option1">Single Trip</p>
+          <p id="option2">Multi Trip</p>
         </div>
-      </form>
+        <form action="/submit">
+          <div id="drop_down">
+            <div id="dropDownSelect">
+              <div id="input_container">
+                <input
+                  type="text"
+                  id="searchInput"
+                  placeholder="Type or choose your destiantion"
+                />
+                <i class="fa-solid fa-chevron-down"></i>
+              </div>
+              <div id="selectedItems"></div>
+            </div>
+            <div id="dropdown_menu">
+              <h4>Popular Destinations</h4>
+              <ul id="destinationList">
+                <li>Bali [Indonesia]</li>
+                <li>New Zealand</li>
+                <li>USA [United States]</li>
+                <li>United Kingdom</li>
+                <li>World Wide</li>
+                <li>All of Europe</li>
+                <li>All of Asia</li>
+              </ul>
+              <p id="notFound" style="display: none">Destination not found</p>
+            </div>
+          </div>
+          <div id="travel-date-section">
+            <p>When do you leave?</p>
+            <input type="date" placeholder="DD/MM/YYYY" readonly />
+          </div>
+          <div id="return-date-section">
+            <p>When do you return?</p>
+            <input type="date" placeholder="DD/MM/YYYY" readonly />
+          </div>
+          <div id="traveller-age-section">
+            <p class="section-title">Current age of all Travellers</p>
+            <div class="age-input-container" id="ageContainer">
+              <input
+                type="number"
+                class="age-input"
+                placeholder="Enter age"
+                min="0"
+              />
+              <div class="add-box" id="addBox">
+                <span>+</span>
+              </div>
+            </div>
+          </div>
+          <input type="text" placeholder="Promo Code" id="promoCode" />
+          <button>GET A QUOTE</button>
+        </form>
+      </div>
     </section>
   </body>
 </html>
