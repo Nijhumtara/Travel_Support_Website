@@ -20,18 +20,52 @@
   <body>
     <header>
       <nav id="nav_bar">
-        <img src="logo.png" alt="logo" id="logo">
+        <img src="logo.png" alt="logo" id="logo" />
         <div id="nav_options">
           <a href="#" id="travel_insurance"
             >Travel Insurance<i class="fa-solid fa-chevron-down"></i
           ></a>
-          <a href="#" id="emergency_assistance"
-            >Emergency Assistance</a>
+          <a href="#" id="emergency_assistance">Emergency Assistance</a>
           <a href="#" id="customer_service"
             >Customer Service<i class="fa-solid fa-chevron-down"></i
           ></a>
         </div>
       </nav>
     </header>
+    <section id="hero_section">
+      <p>BREAKING THE LIMITS OF TRADITIONAL TRAVEL INSURANCE</p>
+      <h2>Find the Right Plan for You</h2>
+      <div id="form_option">
+        <p id="option1">Single Trip</p>
+        <p id="option2">Multi Trip</p>
+      </div>
+      <form action="/submit">
+        <div id="drop_down">
+          <div id="dropDownSelect">
+            <div id="input_container">
+              <input
+                type="text"
+                id="searchInput"
+                placeholder="Type or choose your destiantion"
+              />
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div id="selectedItems"></div>
+          </div>
+          <div id="dropdown_menu">
+            <h4>Popular Destinations</h4>
+            <ul id="destinationList">
+              <li>Bali [Indonesia]</li>
+              <li>New Zealand</li>
+              <li>USA [United States]</li>
+              <li>United Kingdom</li>
+              <li>World Wide</li>
+              <li>All of Europe</li>
+              <li>All of Asia</li>
+            </ul>
+          </div>
+        </div>
+      </form>
+    </section>
   </body>
 </html>
