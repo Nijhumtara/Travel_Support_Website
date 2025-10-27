@@ -18,7 +18,6 @@
     />
   </head>
   <body>
-
     <!-- Navigation_Bar For Travel Support -->
 
     <header>
@@ -39,20 +38,27 @@
     <!-- Home Section -->
 
     <section id="hero_section">
-      <p>BREAKING THE LIMITS OF TRADITIONAL TRAVEL INSURANCE</p>
+      <p id="top_para">BREAKING THE LIMITS OF TRADITIONAL TRAVEL INSURANCE</p>
       <h2>Find the Right Plan for You</h2>
 
       <!-- Form for Travellers Information -->
-       
-      <div id="travel_form">
-        <div id="form_option">
+
+      <div id="user_form">
+        <div id="travel_option">
           <p id="option1">Single Trip</p>
           <p id="option2">Multi Trip</p>
         </div>
-        <form action="/submit">
+
+        <!-- Travel Insurance Form Section Contains destination dropdown, date inputs, and traveller ages -->
+
+        <form action="/submit" id="info_container">
+
+          <!-- Destination Dropdown -->
+
           <div id="drop_down">
+            <p>Where are you travelling?</p>
             <div id="dropDownSelect">
-              <div id="input_container">
+              <div id="input_container" class="input_box">
                 <input
                   type="text"
                   id="searchInput"
@@ -63,12 +69,9 @@
               <div id="selectedItems"></div>
             </div>
             <div id="dropdown_menu">
-              <h4>Popular Destinations</h4>
+              <h4 id="destinationHeading">Popular Destinations</h4>
               <ul id="destinationList">
                 <li>Bali [Indonesia]</li>
-                <li>New Zealand</li>
-                <li>USA [United States]</li>
-                <li>United Kingdom</li>
                 <li>World Wide</li>
                 <li>All of Europe</li>
                 <li>All of Asia</li>
@@ -76,32 +79,54 @@
               <p id="notFound" style="display: none">Destination not found</p>
             </div>
           </div>
-          <div id="travel-date-section">
+
+          <!-- Travel Dates -->
+
+          <div class="date_field">
             <p>When do you leave?</p>
-            <input type="date" placeholder="DD/MM/YYYY" readonly />
+            <input
+              type="text"
+              class="input_box DateText date_input_box"
+              placeholder="DD/MM/YYYY"
+              readonly
+            />
+            <input type="date" class="DateHidden" style="display: none" />
           </div>
-          <div id="return-date-section">
+          <div class="date_field">
             <p>When do you return?</p>
-            <input type="date" placeholder="DD/MM/YYYY" readonly />
+            <input
+              type="text"
+              class="input_box DateText date_input_box"
+              placeholder="DD/MM/YYYY"
+              readonly
+            />
+            <input type="date" class="DateHidden" style="display: none" />
           </div>
+
+          <!-- Travellers Age Section -->
+
           <div id="traveller-age-section">
-            <p class="section-title">Current age of all Travellers</p>
-            <div class="age-input-container" id="ageContainer">
+            <p id="age-section-title">Current Age of All Travellers</p>
+            <div id="ageContainer">
               <input
                 type="number"
                 class="age-input"
-                placeholder="Enter age"
                 min="0"
               />
-              <div class="add-box" id="addBox">
+              <div id="addBox">
                 <span>+</span>
               </div>
             </div>
           </div>
-          <input type="text" placeholder="Promo Code" id="promoCode" />
-          <button>GET A QUOTE</button>
+          <input type="text" placeholder="Promo Code" class="input_box" id="promoCode" />
+
+          <!-- Submit Button -->
+           <div id="btn" class="input_box">
+            <button>GET A QUOTE</button>
+           </div>
         </form>
       </div>
     </section>
+    <script src="index.js"></script>
   </body>
 </html>
