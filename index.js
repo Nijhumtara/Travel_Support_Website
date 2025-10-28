@@ -37,6 +37,7 @@ const searchInput = document.getElementById('searchInput');
 const notFound = document.getElementById('notFound');
 const selectedItems = document.getElementById('selectedItems');
 const optionList = document.getElementById('destinationList'); // matches your destList id
+const dropDownIcon = document.getElementById('dropDownIcon');
 
 let selectedDestinations = [];
 
@@ -51,7 +52,17 @@ dropdownSelect.addEventListener('click', () => {
   searchInput.removeAttribute('readonly');
   searchInput.focus();
 });
+searchInput.addEventListener('focus', () => {
+  dropDownIcon.classList.add('rotate');
+});
 
+searchInput.addEventListener('input', () => {
+  dropDownIcon.classList.add('rotate');
+});
+
+searchInput.addEventListener('blur', () => {
+  dropDownIcon.classList.remove('rotate');
+});
 // Filter countries as user types
 searchInput.addEventListener('input', () => {
   const filter = searchInput.value.toLowerCase();

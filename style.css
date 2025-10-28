@@ -122,6 +122,13 @@ body {
   font-weight: 400;
   margin-top: 0.7rem;
 }
+#dropDownIcon {
+  transition: transform 0.3s ease; 
+}
+
+#dropDownIcon.rotate {
+  transform: rotate(180deg);
+}
 
 #searchInput {
   width: 100%;
