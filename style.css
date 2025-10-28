@@ -18,25 +18,25 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 2rem;
+  padding: 1.4rem 0;
 }
 #logo {
-  height: 40px;
-  width: 155px;
+  height: 37px;
+  width: 140px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   padding-left: 10rem;
 }
 #nav_options {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 700;
   display: flex;
   column-gap: 2rem;
   padding-right: 10rem;
 }
 #nav_options a {
-  color: black;
+  color: #222425;
   text-decoration: none;
   display: flex;
   column-gap: 0.5rem;
@@ -61,6 +61,10 @@ body {
 
 /* Styling User Form */
 
+#user_form {
+  margin-top: 2rem;
+  margin-right: 1.2rem;
+}
 #travel_option {
   display: flex;
   font-size: 10px;
@@ -77,10 +81,6 @@ body {
   background-color: #fdba2e;
   color: black;
   border-top-right-radius: 0.5rem;
-}
-#user_form {
-  margin-top: 3rem;
-  margin-right: 1.2rem;
 }
 #info_container {
   height: auto;

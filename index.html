@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Travel Insurance & Assistance | Reliable Travel Support</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="travel_insurance_style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -22,10 +23,10 @@
 
     <header>
       <nav id="nav_bar">
-        <img src="logo.png" alt="logo" id="logo" />
+        <img src="logo.png" alt="logo" id="logo"/>
         <div id="nav_options">
-          <a href="#" id="travel_insurance"
-            >Travel Insurance<i class="fa-solid fa-chevron-down"></i
+          <a href="#" id="travelLink"
+            >Travel Insurance<i class="fa-solid fa-chevron-down" id="travelDDIcon"></i
           ></a>
           <a href="#" id="emergency_assistance">Emergency Assistance</a>
           <a href="#" id="customer_service"
@@ -52,7 +53,6 @@
         <!-- Travel Insurance Form Section Contains destination dropdown, date inputs, and traveller ages -->
 
         <form action="/submit" id="info_container">
-
           <!-- Destination Dropdown -->
 
           <div id="drop_down">
@@ -108,44 +108,52 @@
           <div id="traveller-age-section">
             <p id="age-section-title">Current Age of All Travellers</p>
             <div id="ageContainer">
-              <input
-                type="number"
-                class="age-input"
-                min="0"
-              />
+              <input type="number" class="age-input" min="0" />
               <div id="addBox">
                 <span>+</span>
               </div>
             </div>
           </div>
-          <input type="text" placeholder="Promo Code" class="input_box" id="promoCode" />
+          <input
+            type="text"
+            placeholder="Promo Code"
+            class="input_box"
+            id="promoCode"
+          />
 
           <!-- Submit Button -->
-           <div id="btn" class="input_box">
+          <div id="btn" class="input_box">
             <button>GET A QUOTE</button>
-           </div>
+          </div>
         </form>
       </div>
     </section>
     <section id="travel_insurance_section">
-      <div id="TI_bck_img"></div>
-      <div id="TI_title_button">
-        <h4>Travel Insurance</h4>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid a earum cupiditate consequatur dignissimos fugiat in sequi unde reiciendis esse.</p>
-        <div id="TI_btn">
-          <button>GET A QUOTE</button>
+      <div id="travel_box">
+        <div id="TI_bck_img"></div>
+        <div id="TI_title_button">
+          <h4>Travel Insurance</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.<br>Aliquid a
+            earum cupiditate consequatur dignissimos fugiat <br>in sequi unde
+            reiciendis esse.
+          </p>
+          <div id="TI_btn">
+            <button>GET A QUOTE</button>
+          </div>
         </div>
-      </div>
-      <div id="TI_Options">
-        <ul id="TI_OptionList">
-          <li>Plans</li>
-          <li>Upgrades</li>
-          <li>Traveller Type</li>
-          <li>Trip Type</li>
-          <li>Benefits</li>
-        </ul>
+        <div id="TI_Options">
+          <ul id="TI_OptionList">
+            <li>Plans</li>
+            <li>Upgrades</li>
+            <li>Traveller Type</li>
+            <li>Trip Type</li>
+            <li>Benefits</li>
+          </ul>
+        </div>
       </div>
     </section>
     <script src="index.js"></script>
+    <script src="travel_insurance.js"></script>
   </body>
 </html>

@@ -1,0 +1,84 @@
+/* Initially show only home page */
+#travel_insurance_section {
+  display: block;
+  position: absolute;
+  top: 13.5%;
+  left: 0;
+  right: 0;
+}
+
+#travel_box{
+    height: fit-content;
+    width: 100%;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* gap: 5rem; */
+    flex-wrap: wrap;
+    padding: 4rem 0;
+}
+
+#TI_bck_img{
+    height: 170px;
+    width: 200px;
+    background-image: url("family.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#TI_title_button{
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.7rem;
+    padding-left: 5rem;
+    padding-right: 3rem;
+}
+#TI_title_button p{
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #6E6E6E;
+}
+#TI_btn{
+    height: fit-content;
+    width: fit-content;
+    background-color: #fdba2e;
+    color: black;
+    padding: 0.7rem 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#TI_btn button{
+  background: none;
+  border: none;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+#TI_OptionList{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    border-left: 1px solid #EEEEEE;
+    padding-left: 2.5rem;
+    font-size: 14px;
+}
+.travel_nav_bar{
+  background-color: rgba(0, 0, 0, 0.8);
+  position: relative;
+}
+.travel_nav_bar_link{
+    color: #ffffff;
+}
+#travelDDIcon {
+  transition: transform 0.3s ease; 
+}
+
+#travelDDIcon.rotate {
+  transform: rotate(180deg);
+}
