@@ -52,6 +52,8 @@ dropdownSelect.addEventListener('click', () => {
   searchInput.removeAttribute('readonly');
   searchInput.focus();
 });
+
+// Rotate Drop Down Icon 
 searchInput.addEventListener('focus', () => {
   dropDownIcon.classList.add('rotate');
 });
@@ -63,6 +65,7 @@ searchInput.addEventListener('input', () => {
 searchInput.addEventListener('blur', () => {
   dropDownIcon.classList.remove('rotate');
 });
+
 // Filter countries as user types
 searchInput.addEventListener('input', () => {
   const filter = searchInput.value.toLowerCase();
@@ -139,7 +142,6 @@ document.addEventListener('click', (e) => {
 });
 
 // Design leaving for travel date_field and return date_field
-
 const dateTexts = document.querySelectorAll(".DateText");
 const dateHiddens = document.querySelectorAll(".DateHidden");
 
@@ -156,7 +158,6 @@ dateTexts.forEach((textInput, index) => {
 });
 
 // Design Age Section
-
 const ageContainer = document.querySelector('#ageContainer');
 const addBox = document.querySelector('#addBox');
 
