@@ -4,17 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Plan Page</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
-    />
+    <link rel="stylesheet" href="plan_style.css">
   </head>
   <body>
     <section id="plan_section">
       <header>
-        <a href="index.html" id="back_home"
-          ><i class="fa-thin fa-share"></i>Back</a
-        >
+        <div id="back_home">
+            <img src="back.svg.png" alt="back-icon">
+            <a href="index.html" id="back_link">Back</a>
+        </div>
         <img src="travel_logo.png" alt="logo" />
       </header>
       <div id="plan_body">
@@ -115,6 +113,7 @@
             <p>$1000</p>
             <p>$2,500,000</p>
             <select name="rental" id="rental-fee">
+              <option value="not-selected">Not Selected</option>
               <option value="$1000">$1000</option>
               <option value="$2000">$2000</option>
               <option value="$3000">$3000</option>

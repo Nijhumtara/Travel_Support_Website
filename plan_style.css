@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Section */
+
+header{
+    height: auto;
+    width: 100%;
+    padding: 0.7rem;
+    background-color: #0B2347;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#back_home{
+    position: absolute;
+    left: 0;
+    margin-left: 9rem;
+}
+#back_home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 0.7rem;
+}
+#back_link{
+    color: #ffffff;
+    text-decoration: none;
+}
