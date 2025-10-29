@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Plan Page</title>
     <link rel="stylesheet" href="plan_style.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <section id="plan_section">
@@ -18,35 +22,44 @@
       <div id="plan_body">
         <div id="first_part">
           <div id="get_quote">
-            <img src="tick.svg fill.png" alt="" />
-            <p>Get Quote</p>
+            <div id="get-quote-container" class="container">
+                <img src="tick.svg fill.png" alt="" />
+                <span class="process-line" id="get-quote-line"></span>
+            </div>
+            <p class="title">Get Quote</p>
           </div>
-          <span></span>
+          <!-- <span class="process-line" id="get-quote-line"></span> -->
           <div id="plan_option">
-            <img src="planVector.png" alt="" />
-            <p>Plan Option</p>
+            <div id="plan-container" class="container">
+                <img src="planVector.png" alt="" />
+                <span class="process-line" id="plan-process-line"></span>
+            </div>
+            <p class="title">Plan Option</p>
           </div>
           <div id="travellers">
-            <p class="circle"></p>
-            <p>Travellers</p>
+            <div  id="travel-container" class="container">
+                <p class="circle"></p>
+                <span class="process-line" id="travel-process-line"></span>
+            </div>
+            <p class="title">Travellers</p>
           </div>
           <div id="payment">
             <p class="circle"></p>
-            <p>Payment</p>
+            <p class="title">Payment</p>
           </div>
         </div>
         <div id="second_part">
-          <div id="destination">
+          <div id="destination" class="container">
             <p>Destination(s):</p>
             <span>Australia</span>
           </div>
-          <div id="dates">
+          <div id="dates" class="container">
             <p>Dates:</p>
             <span id="start_date">04/11/2025</span>
             <span> - </span>
             <span id="end_date">13/11/2025</span>
           </div>
-          <div id="traveller_age">
+          <div id="traveller_age" class="container">
             <p>Traveller Ages:</p>
             <span>23</span>
           </div>
