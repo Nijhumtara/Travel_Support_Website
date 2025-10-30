@@ -9,9 +9,14 @@
       href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Saira:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <section id="plan_section">
+      <!-- Header Section -->
       <header>
         <div id="back_home">
           <img src="back.svg.png" alt="back-icon" />
@@ -19,35 +24,36 @@
         </div>
         <img src="travel_logo.png" alt="logo" />
       </header>
+
+      <!-- Body Section -->
       <div id="plan_body">
+        <!-- First Part of the body -->
         <div id="first_part">
-          <div id="get_quote">
-            <div id="get-quote-container" class="container">
-              <img src="tick.svg fill.png" alt="" />
-              <span class="process-line" id="get-quote-line"></span>
-            </div>
+          <div id="get_quote" class="process-container">
+            <img src="tick.svg fill.png" alt="tick.svg" />
             <p class="title">Get Quote</p>
           </div>
-          <!-- <span class="process-line" id="get-quote-line"></span> -->
-          <div id="plan_option">
-            <div id="plan-container" class="container">
-              <img src="planVector.png" alt="" />
-              <span class="process-line" id="plan-process-line"></span>
-            </div>
+          <div id="plan_option" class="process-container">
+            <img src="planVector.png" alt="planVector" />
             <p class="title">Plan Option</p>
           </div>
-          <div id="travellers">
-            <div id="travel-container" class="container">
-              <p class="circle"></p>
-              <span class="process-line" id="travel-process-line"></span>
-            </div>
+          <div id="travellers" class="process-container">
+            <p class="circle"></p>
             <p class="title">Travellers</p>
           </div>
-          <div id="payment">
+          <div id="payment" class="process-container">
             <p class="circle"></p>
             <p class="title">Payment</p>
           </div>
         </div>
+        <!-- Process Completed lines -->
+        <div id="process-lines">
+          <span class="process-line" id="get-quote-line"></span>
+          <span class="process-line" id="plan-process-line"></span>
+          <span class="process-line" id="travel-process-line"></span>
+        </div>
+
+        <!-- Second Part of the body -->
         <div id="second_part">
           <div id="destination" class="container">
             <p>Destination(s):</p>
@@ -67,21 +73,12 @@
             <button>Edit</button>
           </div>
         </div>
+
+        <!-- Third Part Total Cost Section -->
         <div id="total-cost-calculation">
-          <div id="service-name" class="calculation-container">
+          <!-- Top three container -->
+          <div id="calculation-container">
             <div id="white_box" class="box"></div>
-            <p>Cancellation or trip interruption</p>
-            <span class="info-circle"></span>
-            <p>Luggage and personal effects</p>
-            <span class="info-circle"></span>
-            <p>Travel Delay</p>
-            <span class="info-circle"></span>
-            <p>Personal Liability</p>
-            <p>Optional Cover</p>
-            <p>Rental Vehicle Excess</p>
-            <a href="#">Show All Benefits</a>
-          </div>
-          <div id="voyagar" class="calculation-container">
             <div id="voyagar-box" class="box">
               <img src="voyagar.png" alt="voyagar_img" />
               <h1>VOYAGAR</h1>
@@ -97,17 +94,6 @@
               <p>Total Cost</p>
               <p>Policy benefits listed below, per traveller limits apply</p>
             </div>
-            <p>$1,000</p>
-            <p>$500</p>
-            <p>not available</p>
-            <p>not available</p>
-            <p>not available</p>
-            <div id="choose-btn">
-              <button>Choose Plan</button>
-            </div>
-            <a href="#">View Policy Information</a>
-          </div>
-          <div id="voyagar_plus" class="calculation-container">
             <div id="voyagar-plus-box" class="box">
               <img src="voyagar plus.png" alt="voyagarPlus_img" />
               <h1>VOYAGAR PLUS</h1>
@@ -123,42 +109,129 @@
               <p>Total Cost</p>
               <p>Policy benefits listed below, per traveller limits apply</p>
             </div>
-            <select name="money" id="cancel-voyagarPlus-money">
-              <option value="$1000">$1000</option>
-              <option value="$2000">$2000</option>
-              <option value="$3000">$3000</option>
-              <option value="$4000">$4000</option>
-              <option value="$5000">$5000</option>
-            </select>
-            <select name="money" id="luggage-voyagarPlus-money">
-              <option value="$1000">$1000</option>
-              <option value="$2000">$2000</option>
-              <option value="$3000">$3000</option>
-              <option value="$4000">$4000</option>
-              <option value="$5000">$5000</option>
-            </select>
-            <p>$1000</p>
-            <p>$2,500,000</p>
-            <select name="rental" id="rental-fee">
-              <option value="not-selected">Not Selected</option>
-              <option value="$1000">$1000</option>
-              <option value="$2000">$2000</option>
-              <option value="$3000">$3000</option>
-              <option value="$4000">$4000</option>
-              <option value="$5000">$5000</option>
-            </select>
-            <div id="choose-btn">
-              <button>Choose Plan</button>
+          </div>
+
+          <!-- Services Cost Section -->
+          <div id="cancellation-luggage">
+            <div id="cancellation-container" class="box-container">
+              <div id="cancellation" class="box1">
+                <p>Cancellation or trip interruption</p>
+                <span class="info-circle"></span>
+              </div>
+              <div class="box2">
+                <p id="cancellation-voyagar-fee">$1,000</p>
+              </div>
+              <div class="box3">
+                <select
+                  name="money"
+                  id="cancellation-voyagarPlus-fee"
+                  class="right-box"
+                >
+                  <option value="$1000">$1000</option>
+                  <option value="$2000">$2000</option>
+                  <option value="$3000">$3000</option>
+                  <option value="$4000">$4000</option>
+                  <option value="$5000">$5000</option>
+                </select>
+              </div>
             </div>
-            <a href="#">View Policy Information</a>
+            <div id="luggage-container" class="box-container">
+              <div id="luggage" class="box1">
+                <p>Luggage and personal effects</p>
+                <span class="info-circle"></span>
+              </div>
+              <div class="box2">
+                <p id="luggage-voyagar-fee">$500</p>
+              </div>
+              <div class="box3">
+                <select
+                  name="money"
+                  id="luggage-voyagarPlus-money"
+                  class="right-box"
+                >
+                  <option value="$1000">$1000</option>
+                  <option value="$2000">$2000</option>
+                  <option value="$3000">$3000</option>
+                  <option value="$4000">$4000</option>
+                  <option value="$5000">$5000</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div id="travel-delay" class="box-container">
+            <div id="delay-container" class="box1">
+              <p>Travel Delay</p>
+              <span class="info-circle"></span>
+            </div>
+            <div class="box2">
+              <p id="voyagar-delay">not available</p>
+            </div>
+            <div class="box3">
+              <p id="voyagar-plus-delay" class="right-box">$1000</p>
+            </div>
+          </div>
+          <div id="personal-liability" class="box-container">
+            <div id="liability-container" class="box1">
+              <p>Personal Liability</p>
+              <span class="info-circle"></span>
+            </div>
+            <div class="box2">
+              <p id="voyagar-liability">not available</p>
+            </div>
+            <div class="box3">
+              <p id="voyagar-plus-liability" class="right-box">$2,500,000</p>
+            </div>
+          </div>
+          <span id="oc-title">Optional Cover</span>
+          <div id="rental-vahicle" class="box-container">
+            <div class="box1">
+              <p>Rental Vehicle Excess</p>
+            </div>
+            <div class="box2">
+              <p id="rental-voyagar-plus">not available</p>
+            </div>
+            <div class="box3">
+              <select name="rental" id="rental-fee">
+                <option value="not-selected">Not Selected</option>
+                <option value="$1000">$1000</option>
+                <option value="$2000">$2000</option>
+                <option value="$3000">$3000</option>
+                <option value="$4000">$4000</option>
+                <option value="$5000">$5000</option>
+              </select>
+            </div>
+          </div>
+          <!-- Choose Plan Section -->
+          <div id="choose-options" class="box-container">
+            <div id="benefit-link" class="box1">
+              <a href="#">Show All Benefits</a>
+            </div>
+            <div class="btn-link box2">
+              <div class="choose-btn" id="btn1">
+                <button>CHOOSE PLAN</button>
+              </div>
+              <div class="policy-link">
+                <a href="#">View Policy Information</a>
+              </div>
+            </div>
+            <div class="btn-link box3">
+              <div class="choose-btn" id="btn2">
+                <button>CHOOSE PLAN</button>
+              </div>
+              <div class="policy-link">
+                <a href="#">View Policy Information</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+      <!-- Footer Section -->
       <footer>
         <p>©2025 Logo Ipsum. All Rights Reserved.</p>
         <div id="policy-terms">
-          <p>Privacy Policy</p>
-          <p>Terms and Conditions</p>
+          <a href="#" id="privacy">Privacy Policy</a>
+          <span>|</span>
+          <a href="#" id="terms">Terms and Conditions</p>
         </div>
       </footer>
     </section>
