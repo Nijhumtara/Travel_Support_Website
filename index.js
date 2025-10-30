@@ -192,3 +192,16 @@ ageContainer.addEventListener('keypress', function(e) {
     e.target.blur(); // remove focus
   }
 });
+
+// Functionality to go to Third Page
+
+document.getElementById("btn").addEventListener("click", () => {
+  localStorage.setItem("previousPage", "home");
+  window.location.href = "plan.html";
+});
+
+document.getElementById("TI_btn").addEventListener("click", () => {
+  localStorage.setItem("previousPage", "travel");
+  window.location.href = "plan.html";
+});
+

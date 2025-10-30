@@ -18,15 +18,16 @@ header{
     justify-content: center;
 }
 #back_home{
-    position: absolute;
-    left: 0;
-    margin-left: 11rem;
-}
-#back_home{
     display: flex;
     align-items: center;
     justify-content: center;
     column-gap: 1rem;
+    position: absolute;
+    left: 0;
+    margin-left: 11rem;
+}
+#back_home img, #back_home a{
+    cursor: pointer;
 }
 #back_link{
     color: #ffffff;
