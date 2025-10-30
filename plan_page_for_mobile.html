@@ -1,20 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Plan Page</title>
-    <link rel="stylesheet" href="plan_style.css" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plan Page For Mobile</title>
+    <link rel="stylesheet" href="plan_page_mobile.css">
     <link
       href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Saira:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
+</head>
+<body>
     <section id="plan_section">
       <!-- Header Section -->
       <header>
@@ -22,7 +18,7 @@
           <img src="back.svg.png" alt="back-icon" id="back-icon"/>
           <a id="back_link">Back</a>
         </div>
-        <img src="travel_logo.png" alt="logo" id="logo"/>
+        <img src="logo_for_mobile.png" alt="logo" id="logo"/>
       </header>
 
       <!-- Body Section -->
@@ -56,23 +52,28 @@
         <!-- Second Part of the body -->
         <div id="second_part">
           <div id="details_container">
+            <div id="trip_edit">
+                <h2>Trip Details</h2>
+                <div id="edit_btn">
+                    <button>Edit</button>
+                </div>
+            </div>
             <div id="destination" class="container">
               <p>Destination(s):</p>
               <span>Australia</span>
             </div>
             <div id="dates" class="container">
               <p>Dates:</p>
-              <span id="start_date">04/11/2025</span>
-              <span> - </span>
-              <span id="end_date">13/11/2025</span>
+              <div id="date-container">
+                <span id="start_date">04/11/2025</span>
+                <span> - </span>
+                <span id="end_date">13/11/2025</span>
+              </div>
             </div>
             <div id="traveller_age" class="container">
               <p>Traveller Ages:</p>
               <span>23</span>
             </div>
-          </div>
-          <div id="edit_btn">
-            <button>Edit</button>
           </div>
         </div>
 
@@ -80,22 +81,19 @@
         <div id="total-cost-calculation">
           <!-- Top three container -->
           <div id="calculation-container">
-            <div id="white_box" class="box"></div>
-            <div id="voyagar-box" class="box">
-              <img src="voyagar.png" alt="voyagar_img" />
+            <div id="voyagar" class="box">
               <h1>VOYAGAR</h1>
-              <div class="from-cost">
-                <p>From</p>
-                <span>$17.37</span>
-              </div>
-              <span class="cut-line"></span>
-              <div class="total-cost">
-                <p>$15</p>
-                <p class="decimal">.98</p>
-              </div>
-              <p>Total Cost</p>
-              <p class="benefits-para">Policy benefits listed below, per traveller limits apply</p>
+              <span>$15.98</span>
             </div>
+            <div id="voyagar-plus" class="box">
+              <h1>VOYAGAR PLUS</h1>
+              <span>$41.34</span>
+              </div>
+            </div>
+
+          </div>
+
+          <div id="voyagar-plus-container">
             <div id="voyagar-plus-box" class="box">
               <img src="voyagar plus.png" alt="voyagarPlus_img" />
               <h1>VOYAGAR PLUS</h1>
@@ -111,17 +109,10 @@
               <p>Total Cost</p>
               <p class="benefits-para">Policy benefits listed below, per traveller limits apply</p>
             </div>
-          </div>
-
-          <!-- Services Cost Section -->
-          <div id="cancellation-luggage">
             <div id="cancellation-container" class="box-container">
               <div id="cancellation" class="box1">
                 <p>Cancellation or trip interruption</p>
                 <span class="info-circle"></span>
-              </div>
-              <div class="box2">
-                <p id="cancellation-voyagar-fee">$1,000</p>
               </div>
               <div class="box3">
                 <select
@@ -203,30 +194,20 @@
               </select>
             </div>
           </div>
-          <!-- Choose Plan Section -->
           <div id="choose-options" class="box-container">
-            <div id="benefit-link" class="box1">
+            <div class="btn-link box2">
+              <div id="choose-btn">
+                <button>CHOOSE PLAN</button>
+              </div>
+              <div id="policy-link">
+                <a href="#">View Policy Information</a>
+              </div>
+              <div id="benefit-link">
               <a href="#">Show All Benefits</a>
             </div>
-            <div class="btn-link box2">
-              <div class="choose-btn" id="btn1">
-                <button>CHOOSE PLAN</button>
-              </div>
-              <div class="policy-link">
-                <a href="#">View Policy Information</a>
-              </div>
             </div>
-            <div class="btn-link box3">
-              <div class="choose-btn" id="btn2">
-                <button>CHOOSE PLAN</button>
-              </div>
-              <div class="policy-link">
-                <a href="#">View Policy Information</a>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
+        
       <!-- Footer Section -->
       <footer>
         <p>©2025 Logo Ipsum. All Rights Reserved.</p>
@@ -236,7 +217,5 @@
           <a href="#" id="terms">Terms and Conditions</p>
         </div>
       </footer>
-    </section>
-    <script src="plan.js"></script>
-  </body>
+</body>
 </html>

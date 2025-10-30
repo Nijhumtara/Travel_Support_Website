@@ -20,3 +20,22 @@ function goBack() {
 // Add event to both icon and link
 backLink.addEventListener("click", goBack);
 backIcon.addEventListener("click", goBack);
+
+// Responsiveness for large mobile
+// const logo = document.querySelector('#logo');
+// const menu = document.querySelector("#nav_options");
+
+// function handleSmallScreen(e) {
+//   logo.src = "logo_for_mobile.png"
+//   if (e.matches) {
+//     menu.style.flexDirection = "column";
+//     menu.style.background = "#222";
+//   } else {
+//     menu.style.flexDirection = "row";
+//     menu.style.background = "transparent";
+//   }
+// }
+
+// const mq = window.matchMedia("(max-width: 480px)");
+// handleSmallScreen(mq);
+// mq.addEventListener("change", handleSmallScreen);

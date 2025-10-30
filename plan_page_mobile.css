@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Lato", sans-serif;
+}
+/* Header Section */
+
+header {
+  height: auto;
+  width: 100%;
+  padding: 1.5rem 0;
+  background-color: #0b2347;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#back_home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 1rem;
+  position: absolute;
+  left: 0;
+  margin-left: 3rem;
+}
+#back_home img{
+    height: 20px;
+    width: 20px;
+}
+#back_home img,
+#back_home a {
+  cursor: pointer;
+}
+#back_link {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* Body Section */
+#plan_body {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 400;
+}
+#first_part {
+  height: auto;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  padding: 1rem 0;
+  background-color: #ffffff;
+  color: #212529;
+  box-shadow: 0px 0px 10px -8px #000000;
+}
+#first_part img {
+  z-index: 10;
+}
+.process-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 0.4rem;
+  z-index: 1001;
+}
+.circle {
+  height: 17px;
+  width: 17px;
+  border-radius: 50%;
+  border: 2px solid #e2e2e2;
+  z-index: 10;
+}
+.process-line {
+  height: 2px;
+  width: 94px;
+}
+#get-quote-line {
+  background-color: #0078d4;
+  margin-right: 0rem;
+  padding-right: 0.2rem;
+}
+#plan-process-line,
+#travel-process-line {
+  background-color: #e2e2e2;
+}
+#plan-process-line {
+  width: 92px;
+  margin-left: 0.7rem;
+}
+#travel-process-line {
+  width: 80px;
+  margin-left: 0.7rem;
+}
+#process-lines {
+  display: flex;
+  column-gap: 0.5rem;
+  position: absolute;
+  top: 17.2%;
+}
+
+/* Second Part */
+
+#trip_edit{
+    display: flex;
+    align-items: center;
+    gap: 16rem;
+    padding: 1rem 0;
+}
+
+#details_container {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+#second_part p, h2{
+  color: #0B254B;
+
+}
+#second_part p{
+    font-weight: 700;
+}
+#second_part span {
+  color: #636363;
+}
+#edit_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.3rem 0.5rem;
+  border: 1px solid #0078d4;
+  border-radius: 0.2rem;
+}
+#edit_btn button {
+  background: none;
+  border: none;
+  color: #0078d4;
+}
