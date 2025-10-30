@@ -98,6 +98,6 @@
   top: 100%; /* start just below the white section */
   left: 0;
   z-index: 0;
-  height: 510px;
+  height: 482.5px;
   min-height: 100%; /* can stretch when content grows */
 }

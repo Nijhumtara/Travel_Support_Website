@@ -3,6 +3,7 @@
     padding: 0;
     font-size: 14px;
     font-family: "Lato", sans-serif;
+    font-weight: 400;
 }
 
 /* Header Section */
@@ -39,7 +40,6 @@ header{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
 }
 #first_part{
     height: auto;
@@ -95,6 +95,7 @@ header{
     align-items: center;
     justify-content: center;
     gap: 10rem;
+    padding: 2rem;
 }
 #second_part p{
     color: #0B254B;
@@ -114,4 +115,85 @@ header{
     background: none;
     border: none;
     color: #0078D4;
+}
+
+/* Calculation Box Styling */
+
+#total-cost-calculation{
+    height: fit-content;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #DADADA;
+}
+#total-cost-calculation h1{
+    font-family: "Poppins", sans-serif;
+}
+.calculation-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 0.5rem;
+}
+.box{
+    height: 350px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 1rem;
+}
+.box img{
+    height: 50px;
+    width: 50px;
+}
+
+.from-cost{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 0.5rem;
+    color: #909395;
+}
+.from-cost span{
+    position: relative;
+}
+.box p{
+     color: #909395;
+     font-size: 12px;
+}
+.cut-line{
+    position: absolute;
+    height: 1.5px;
+    width: 45px;
+    background-color: #909395;
+}
+#voyagar-box .cut-line{
+    top: 62.8%;
+    left: 49.8%;
+}
+#voyagar-plus-box .cut-line{
+    top: 63.7%;
+    right: 18.7%;
+}
+.total-cost{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.total-cost p{
+    font-size: 22px;
+    color: #0B2347;
+    font-weight: 700;
+}
+.total-cost .decimal{
+    font-size: 14px;
+    padding-top: 0.5rem;
+}
+#voyagar-box{
+    background-color: #EEEEEE;
+    padding: 0;
 }

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Plan Page</title>
-    <link rel="stylesheet" href="plan_style.css">
+    <link rel="stylesheet" href="plan_style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
       rel="stylesheet"
@@ -14,8 +14,8 @@
     <section id="plan_section">
       <header>
         <div id="back_home">
-            <img src="back.svg.png" alt="back-icon">
-            <a href="index.html" id="back_link">Back</a>
+          <img src="back.svg.png" alt="back-icon" />
+          <a href="index.html" id="back_link">Back</a>
         </div>
         <img src="travel_logo.png" alt="logo" />
       </header>
@@ -23,23 +23,23 @@
         <div id="first_part">
           <div id="get_quote">
             <div id="get-quote-container" class="container">
-                <img src="tick.svg fill.png" alt="" />
-                <span class="process-line" id="get-quote-line"></span>
+              <img src="tick.svg fill.png" alt="" />
+              <span class="process-line" id="get-quote-line"></span>
             </div>
             <p class="title">Get Quote</p>
           </div>
           <!-- <span class="process-line" id="get-quote-line"></span> -->
           <div id="plan_option">
             <div id="plan-container" class="container">
-                <img src="planVector.png" alt="" />
-                <span class="process-line" id="plan-process-line"></span>
+              <img src="planVector.png" alt="" />
+              <span class="process-line" id="plan-process-line"></span>
             </div>
             <p class="title">Plan Option</p>
           </div>
           <div id="travellers">
-            <div  id="travel-container" class="container">
-                <p class="circle"></p>
-                <span class="process-line" id="travel-process-line"></span>
+            <div id="travel-container" class="container">
+              <p class="circle"></p>
+              <span class="process-line" id="travel-process-line"></span>
             </div>
             <p class="title">Travellers</p>
           </div>
@@ -67,9 +67,9 @@
             <button>Edit</button>
           </div>
         </div>
-        <div>
-          <div id="subject">
-            <div id="white_box"></div>
+        <div id="total-cost-calculation">
+          <div id="service-name" class="calculation-container">
+            <div id="white_box" class="box"></div>
             <p>Cancellation or trip interruption</p>
             <span class="info-circle"></span>
             <p>Luggage and personal effects</p>
@@ -81,15 +81,22 @@
             <p>Rental Vehicle Excess</p>
             <a href="#">Show All Benefits</a>
           </div>
-          <div id="voyagar">
-            <img src="voyagar.png" alt="voyagar_img" />
-            <p>From</p>
-            <span>$17.37</span>
-            <span class="cut-line"></span>
-            <p>$15</p>
-            <span class="decimal">.98</span>
-            <p>Total Cost</p>
-            <p>Policy benefits listed below, per traveller limits apply</p>
+          <div id="voyagar" class="calculation-container">
+            <div id="voyagar-box" class="box">
+              <img src="voyagar.png" alt="voyagar_img" />
+              <h1>VOYAGAR</h1>
+              <div class="from-cost">
+                <p>From</p>
+                <span>$17.37</span>
+              </div>
+              <span class="cut-line"></span>
+              <div class="total-cost">
+                <p>$15</p>
+                <p class="decimal">.98</p>
+              </div>
+              <p>Total Cost</p>
+              <p>Policy benefits listed below, per traveller limits apply</p>
+            </div>
             <p>$1,000</p>
             <p>$500</p>
             <p>not available</p>
@@ -100,15 +107,22 @@
             </div>
             <a href="#">View Policy Information</a>
           </div>
-          <div id="voyagar_plus">
-            <img src="voyagar plus.png" alt="voyagarPlus_img" />
-            <p>From</p>
-            <span>$17.37</span>
-            <span class="cut-line"></span>
-            <p>$15</p>
-            <span class="decimal">.98</span>
-            <p>Total Cost</p>
-            <p>Policy benefits listed below, per traveller limits apply</p>
+          <div id="voyagar_plus" class="calculation-container">
+            <div id="voyagar-plus-box" class="box">
+              <img src="voyagar plus.png" alt="voyagarPlus_img" />
+              <h1>VOYAGAR PLUS</h1>
+              <div class="from-cost">
+                <p>From</p>
+                <span>$44.94</span>
+              </div>
+              <span class="cut-line"></span>
+              <div class="total-cost">
+                <p>$41</p>
+                <p class="decimal">.34</p>
+              </div>
+              <p>Total Cost</p>
+              <p>Policy benefits listed below, per traveller limits apply</p>
+            </div>
             <select name="money" id="cancel-voyagarPlus-money">
               <option value="$1000">$1000</option>
               <option value="$2000">$2000</option>

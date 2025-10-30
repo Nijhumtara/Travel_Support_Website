@@ -30,13 +30,20 @@ travelLink.addEventListener("click", () => {
   }
 });
 
-// const blackPart = document.querySelector('#black-part');
-// const infoContainer = document.querySelector("#info_container");
+const blackPart = document.querySelector('#black-part');
+const infoContainer = document.querySelector("#info_container");
 
-// let infoheightIncrease = false;
-// travelLink.addEventListener('click', () => {
-//   if(infoContainer.style.height > "100"){
-//     blackPart.style.height = "700px";
-//   }
-// })
+travelLink.addEventListener('click', () => {
+  // get actual rendered height of infoContainer (number)
+  const infoHeight = infoContainer.offsetHeight;
 
+  if (infoHeight < 430) {
+    blackPart.style.height = "482.5px";
+  }
+  else if (infoHeight < 455) {
+    blackPart.style.height = "510px";
+  } 
+  else {
+    blackPart.style.height = "543.5px";
+  }
+});
