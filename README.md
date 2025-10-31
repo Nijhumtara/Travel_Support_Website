@@ -21,19 +21,19 @@ The website allows users to explore different travel insurance options, view det
 
 🧠 Technologies Used
 
-HTML5 – Semantic structure of the web pages.
+- HTML5 – Semantic structure of the web pages.
 
-CSS3 – Custom styles, transitions, and responsive layout.
+- CSS3 – Custom styles, transitions, and responsive layout.
 
-JavaScript (ES6) – Interactive elements, dynamic page rendering, and navigation logic.
+- JavaScript (ES6) – Interactive elements, dynamic page rendering, and navigation logic.
 
-Font Awesome / Google Fonts – Icons and typography (Saira font imported).
+- Font Awesome / Google Fonts – Icons and typography (Saira font imported).
 
 📱 Responsiveness
 
-The project layout is optimized for desktop and tablet screens.
+- The project layout is optimized for desktop and tablet screens.
 
-Mobile responsiveness for the homepage is still in progress and will be improved in future updates.
+- Mobile responsiveness for the homepage is still in progress and will be improved in future updates.
 
 🚀 Future Improvements
 
