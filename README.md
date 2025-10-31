@@ -1,4 +1,4 @@
-#Travel Insurance Website
+# Travel Insurance Website
 
 This is a front-end project designed to provide users with a seamless travel insurance experience.
 The website allows users to explore different travel insurance options, view detailed information, and navigate between multiple interactive sections using smooth transitions and dynamic effects.
