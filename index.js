@@ -205,3 +205,10 @@ document.getElementById("TI_btn").addEventListener("click", () => {
   window.location.href = "plan.html";
 });
 
+const menuIcon = document.getElementById("menu-icon");
+const navLinks = document.getElementById("nav_options");
+
+menuIcon.addEventListener("click", () => {
+  navLinks.classList.toggle("show");
+});
+

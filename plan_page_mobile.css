@@ -1,7 +1,7 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: "Lato", sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
 }
 /* Header Section */
 
@@ -23,9 +23,9 @@ header {
   left: 0;
   margin-left: 3rem;
 }
-#back_home img{
-    height: 20px;
-    width: 20px;
+#back_home img {
+  height: 20px;
+  width: 20px;
 }
 #back_home img,
 #back_home a {
@@ -108,11 +108,11 @@ header {
 
 /* Second Part */
 
-#trip_edit{
-    display: flex;
-    align-items: center;
-    gap: 16rem;
-    padding: 1rem 0;
+#trip_edit {
+  display: flex;
+  align-items: center;
+  gap: 16rem;
+  padding: 1rem 0;
 }
 
 #details_container {
@@ -127,12 +127,12 @@ header {
   flex-direction: column;
   gap: 0.4rem;
 }
-#second_part p, h2{
-  color: #0B254B;
-
+#second_part p,
+h2 {
+  color: #0b254b;
 }
-#second_part p{
-    font-weight: 700;
+#second_part p {
+  font-weight: 700;
 }
 #second_part span {
   color: #636363;
@@ -149,4 +149,361 @@ header {
   background: none;
   border: none;
   color: #0078d4;
+}
+
+/* Third Part */
+#total-cost-calculation {
+  height: auto;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 0.6rem;
+  margin-top: 2rem;
+}
+.box h3,
+#voyagar-plus-box h1 {
+  font-family: "Saira", sans-serif;
+}
+#calculation-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+#calculation-container h3,
+#calculation-container span {
+  padding: 1rem 1rem;
+}
+#voyagar-plus-container {
+  height: auto;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 1px solid #dadada;
+  box-shadow: 0px 0px 40px -22px #000000;
+  padding-top: 2rem;
+}
+.box {
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  column-gap: 5rem;
+  border: 1px solid #dadada;
+  color: #6a6d72;
+  font-weight: 400;
+}
+#voyagar-plus {
+  background-color: #f4f6f8;
+}
+#voyagar-plus-box {
+  height: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+#voyagar-plus-box img {
+  height: 80px;
+  width: 80px;
+}
+.from-cost {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 0.5rem;
+  color: #909395;
+}
+.from-cost span {
+  position: relative;
+}
+/* Styling cut line to actual cost */
+.cut-line {
+  position: absolute;
+  height: 1.5px;
+  width: 45px;
+  background-color: #909395;
+}
+#voyagar-plus-box .cut-line {
+  bottom: -24.5%;
+  right: 40.5%;
+}
+
+/* Styling total cost */
+.total-cost {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.total-cost p {
+  font-size: 22px;
+  color: #0b2347;
+  font-weight: 700;
+}
+.total-cost .decimal {
+  font-size: 14px;
+  padding-top: 0.5rem;
+}
+#voyagar-plus-box .total-cost p {
+  color: #fdba2e;
+}
+
+#CLTP-container {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.box-container {
+  height: auto;
+  width: 80%;
+  display: flex;
+  color: #212529;
+  font-size: 12px;
+  font-weight: 400;
+}
+.box1,
+.box2 {
+  height: auto;
+  width: 100%;
+  padding: 1rem 0;
+  border: 1px solid #dfdfdf;
+}
+.box1 {
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  line-height: 1.2rem;
+}
+.box1 p,
+.box1 a {
+  padding-left: 1rem;
+}
+.box2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.info-circle {
+  height: 14px;
+  width: 14px;
+  background-image: url("Imgs/info-circle.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  margin-bottom: 0.2rem;
+}
+#cancellation .info-circle {
+  left: 50%;
+}
+#luggage .info-circle {
+  left: 35%;
+}
+#delay-container .info-circle {
+  left: 50%;
+}
+#liability-container .info-circle {
+  left: 65%;
+}
+.box2 select {
+  height: 20px;
+  width: 90px;
+  text-align: center;
+  font-size: 11px;
+  border: 1px solid #e2e2e2;
+}
+/* Styling optical cover title */
+#oc-title {
+  padding: 0.8rem 0;
+  color: #0b2347;
+  font-weight: 600;
+  font-family: "Saira", sans-serif;
+  margin-right: 50%;
+}
+#rental-vahicle .box1,
+#rental-vahicle .box2 {
+  border: none;
+}
+#rental-vahicle {
+  border-top: 1px solid #dadada;
+}
+/* Styling choose buttons */
+.btn-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 1.2rem 0;
+  row-gap: 1rem;
+  border: none;
+}
+
+#choose-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.8rem 1.5rem;
+  background-color: #f6ae00;
+}
+#choose-btn button {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+#policy-link a {
+  font-size: 11px;
+  color: #002b45;
+}
+#benefit-link a {
+  color: #0774b3;
+}
+
+/* Styling Footer Section */
+footer {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.7rem 0;
+  margin-top: 2rem;
+  background-color: #0b2347;
+  color: #ffffff;
+}
+#policy-terms {
+  display: flex;
+  gap: 1rem;
+  padding-bottom: 1rem;
+}
+#policy-terms a {
+  color: #ffffff;
+  text-decoration: none;
+}
+footer span {
+  padding: 1rem 5rem;
+  border-top: 1px solid #263243;
+}
+
+@media (max-width: 320px) {
+  body {
+    font-size: 12px;
+  }
+  #logo {
+    height: 19px;
+    width: 19px;
+  }
+  #back_home {
+    column-gap: 0.5rem;
+    margin-left: 2rem;
+  }
+  #back_home img {
+    height: 20px;
+    width: 20px;
+  }
+  #first_part {
+    gap: 1.8rem;
+    font-size: 10px;
+  }
+  .circle {
+    height: 15px;
+    width: 15px;
+  }
+  #get-quote-line {
+    width: 59px;
+    margin-left: 0.2rem;
+  }
+  #plan-process-line {
+    width: 62px;
+    margin-right: 0rem;
+    margin-left: 0.3rem;
+  }
+  #travel-process-line {
+    width: 52.8px;
+  }
+  #process-lines {
+    top: 15.9%;
+  }
+  #details_container {
+    column-gap: 3rem;
+    margin-left: 1.5rem;
+  }
+  #trip_edit {
+    gap: 7rem;
+  }
+  #edit_btn {
+    margin-right: 2rem;
+  }
+  #calculation-container h3 {
+    font-size: 14px;
+  }
+  .box {
+    column-gap: 3rem;
+  }
+  #voyagar-plus-box p{
+    color: #909395;
+  }
+  #voyagar-plus-box h1 {
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .benefits-para{
+    font-size: 10px;
+  }
+  .box-container {
+    width: 90%;
+  }
+  .box1 p,
+  .box1 a {
+    padding-left: 0rem;
+  }
+  .box1 p,
+  .box1 a {
+    padding-left: 0.4rem;
+  }
+  .info-circle {
+    margin-bottom: 0.1rem;
+  }
+  #cancellation .info-circle {
+    left: 60%;
+  }
+  #luggage .info-circle {
+    left: 38%;
+  }
+  #delay-container .info-circle {
+    left: 62%;
+  }
+  #liability-container .info-circle {
+    left: 80%;
+  }
+  .cut-line {
+    width: 55px;
+    bottom: -24%;
+    right: 23%;
+  }
+  footer {
+    padding: 1rem 0 1rem 0;
+    gap: 1rem;
+    font-size: 12px;
+  }
+  #policy-terms{
+    padding-bottom: 0;
+  }
+  footer span {
+    padding: 1rem 1rem;
+    border-top: 1px solid #263243;
+    font-size: 13px;
+  }
 }

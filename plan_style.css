@@ -295,7 +295,7 @@ header {
 .info-circle {
   height: 16px;
   width: 16px;
-  background-image: url("info-circle.png");
+  background-image: url("Imgs/info-circle.png");
   background-size: cover;
   background-repeat: no-repeat;
 }

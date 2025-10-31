@@ -3,7 +3,7 @@
   padding: 0;
 }
 body {
-  background-image: url("home_background_img.png");
+  background-image: url("Imgs/home_background_img.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -19,6 +19,14 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 1.4rem 0;
+  position: relative;
+}
+#menu-icon {
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 10001;
+  display: none;
+  margin-right: 5rem;
 }
 #logo {
   height: 37px;
@@ -106,7 +114,7 @@ body {
   align-items: center;
   width: 262px;
 }
-.input_box{
+.input_box {
   height: 32px;
   width: 230px;
   padding: 0 1rem 0 1rem;
@@ -123,7 +131,7 @@ body {
   margin-top: 0.7rem;
 }
 #dropDownIcon {
-  transition: transform 0.3s ease; 
+  transition: transform 0.3s ease;
 }
 
 #dropDownIcon.rotate {
@@ -327,10 +335,37 @@ hr {
   border: none;
 }
 
-#btn button{
+#btn button {
   background: none;
   border: none;
   font-size: 12px;
   font-weight: 700;
   cursor: pointer;
+}
+@media (max-width: 768px) {
+  #menu-icon {
+    display: block;
+  }
+
+  #nav_options {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background: #333;
+    width: 150px;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  #nav_options.show {
+    display: flex;
+    animation: fadeIn 0.3s ease;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
 }

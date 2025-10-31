@@ -13,7 +13,7 @@ let travelIsOpen = false;
 
 travelLink.addEventListener("click", () => {
   if (!travelIsOpen) {
-    logo.src = "travel_logo.png";
+    logo.src = "Imgs/travel_logo.png";
     navBar.classList.add("travel_nav_bar");
     travelDropDownIcon.classList.add("travel_rotate");
     navOptions.classList.add("travel_nav_bar_link");
@@ -21,7 +21,7 @@ travelLink.addEventListener("click", () => {
     travelIsOpen = true;
   }
   else{
-    logo.src = "logo.png";
+    logo.src = "Imgs/logo.png";
     navBar.classList.remove("travel_nav_bar");
     travelDropDownIcon.classList.remove("travel_rotate");
     navOptions.classList.remove("travel_nav_bar_link");
