@@ -37,7 +37,7 @@ The website allows users to explore different travel insurance options, view det
 
 🚀 Future Improvements
 
-- Improve Functionality.
+- Improve Design and Functionality.
 
 - Complete full mobile responsiveness for all pages.
 
