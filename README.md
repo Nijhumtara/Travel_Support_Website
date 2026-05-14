@@ -39,6 +39,8 @@ The website allows users to explore different travel insurance options, view det
 
 - Improve Design and Functionality.
 
+- Fix Issues.
+
 - Complete full mobile responsiveness for all pages.
 
 - Add form validation and live feedback.
